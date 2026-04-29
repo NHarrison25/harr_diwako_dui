@@ -48,5 +48,6 @@
 #define DUI_RANK_COLONEL          "a3\ui_f\data\GUI\Cfg\Ranks\colonel_gs.paa"
 #define DUI_BUDDY                 "a3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa"
 #define DUI_BUDDY_COMPASS         "z\diwako_dui\addons\main\UI\icon_styles\standard\buddy_compass"
+#define DUI_UNCONSCIOUS           "\A3\Ui_f\data\IGUI\Cfg\Revive\overlayIcons\u100_ca.paa"
 
 #include "\z\diwako_dui\addons\main\script_macros.hpp"

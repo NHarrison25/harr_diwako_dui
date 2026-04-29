@@ -45,6 +45,11 @@ if (_unit getVariable [QGVAR(customIcon), ""] isNotEqualTo "") exitWith {
     _unit getVariable QGVAR(customIcon);
 };
 
+// Unconscious
+if (_unit getVariable "ace_isUnconscious") exitWith {
+    _namespace getVariable ["unconscious", DUI_UNCONSCIOUS];
+};
+
 // Buddy
 if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) exitWith {
     _namespace getVariable ["buddy_compass", DUI_BUDDY_COMPASS];
