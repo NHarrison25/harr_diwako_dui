@@ -17,14 +17,18 @@ if (GVAR(show)) then {
     {
         _innerIcon = _x getVariable [QGVAR(customIcon), ""];
         if (_innerIcon isEqualTo "") then {
-            if (GVAR(icon_buddy) && {_x isEqualTo (_player getVariable [QEGVAR(buddy,buddy), objNull])}) then {
-                _innerIcon = _indicatorNamespace getVariable ["buddy", ""];
+            if (_x getVariable "ace_isUnconscious") then {
+                _innerIcon = _indicatorNamespace getVariable ["unconscious", "A3\Ui_f\data\IGUI\Cfg\Revive\overlayIcons\u100_ca.paa"];
             } else {
-                if (GVAR(icon_leader) && {_x isEqualTo (leader group _player)}) then {
-                    _innerIcon = _indicatorNamespace getVariable ["leader", ""];
+                if (GVAR(icon_buddy) && {_x isEqualTo (_player getVariable [QEGVAR(buddy,buddy), objNull])}) then {
+                    _innerIcon = _indicatorNamespace getVariable ["buddy", ""];
                 } else {
-                    if (GVAR(icon_medic) && {_x getVariable ["ace_medical_medicClass", [0, 1] select (_x getUnitTrait "medic")] > 0}) then {
-                        _innerIcon = _indicatorNamespace getVariable ["medic", ""];
+                    if (GVAR(icon_leader) && {_x isEqualTo (leader group _player)}) then {
+                        _innerIcon = _indicatorNamespace getVariable ["leader", ""];
+                    } else {
+                        if (GVAR(icon_medic) && {_x getVariable ["ace_medical_medicClass", [0, 1] select (_x getUnitTrait "medic")] > 0}) then {
+                            _innerIcon = _indicatorNamespace getVariable ["medic", ""];
+                        };
                     };
                 };
             };

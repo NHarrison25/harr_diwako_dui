@@ -9,6 +9,8 @@ if !(_unit isNil QGVAR(customIcon)) exitWith {
 private _icon = "a3\ui_f\data\map\Markers\Military\dot_ca.paa";
 private _size = 3.6;
 
+
+
 if (leader _unit == _unit) then {
     _icon = "a3\ui_f\data\gui\cfg\ranks\corporal_gs.paa";
     _size = 1.3;
@@ -23,6 +25,11 @@ if (_unit getUnitTrait "medic" || _unit getVariable ["ace_medical_medicClass", 0
 if (_player == (_unit getVariable [QEGVAR(buddy,buddy), objNull])) then {
     _icon = QPATHTOF(UI\buddy_dot.paa);
     _size = 1.6;
+};
+
+if (_unit getVariable "ace_isUnconscious") then {
+    _icon = "A3\Ui_f\data\IGUI\Cfg\Revive\overlayIcons\u100_ca.paa";
+    _size = 2.5;
 };
 
 [_icon, _size];

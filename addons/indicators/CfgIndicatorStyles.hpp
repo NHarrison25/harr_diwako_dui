@@ -7,6 +7,7 @@ class diwako_dui_indicator_style {
         leader = "\A3\ui_f\data\igui\cfg\cursors\leader_ca.paa";
         medic = "\A3\ui_f\data\igui\cfg\cursors\unitHealer_ca.paa";
         buddy = "\A3\ui_f_curator\Data\Displays\RscDisplayCurator\modeUnits_ca.paa";
+        unconscious = "\A3\Ui_f\data\IGUI\Cfg\Revive\overlayIcons\u100_ca.paa";
     };
 
     class square:standard {
