@@ -30,6 +30,8 @@ class diwako_dui_icon_style
 
         speaking = "\A3\ui_f\data\GUI\RscCommon\RscDebugConsole\feedback_ca.paa";
         speakingRadio = "\A3\modules_f_curator\Data\portraitRadio_ca.paa";
+
+        unconscious = "\A3\Ui_f\data\IGUI\Cfg\Revive\overlayIcons\u100_ca.paa";
     };
 
     class terry:standard
