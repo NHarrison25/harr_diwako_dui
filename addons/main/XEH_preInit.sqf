@@ -149,6 +149,14 @@ if (isClass(configFile >> "CfgPatches" >> "ace_interact_menu")) then {
     ,false
 ] call CBA_fnc_addSetting;
 
+[
+    "diwako_dui_vitals_medicAlert"
+    ,"CHECKBOX"
+    ,["Enabled", "Play a sound when a group member goes unconscious, if you are a medic."]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+] call CBA_fnc_addSetting;
+
 _curCat = localize "STR_dui_cat_custom_color";
 
 [
@@ -223,14 +231,6 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,[CBA_SETTINGS_CAT, _curCat]
     ,[0.93, 0.26, 0.93, 1]
     ,false
-] call CBA_fnc_addSetting;
-
-[
-    "diwako_dui_vitals_medicAlert"
-    ,"CHECKBOX"
-    ,["Enabled", "Play a sound when a group member goes unconscious, if you are a medic."]
-    ,[CBA_SETTINGS_CAT, _curCat]
-    ,true
 ] call CBA_fnc_addSetting;
 
 if !(hasInterface) exitWith {
