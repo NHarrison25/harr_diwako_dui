@@ -225,6 +225,14 @@ _curCat = localize "STR_dui_cat_custom_color";
     ,false
 ] call CBA_fnc_addSetting;
 
+[
+    "diwako_dui_vitals_medicAlert"
+    ,"CHECKBOX"
+    ,["Enabled", "Play a sound when a group member goes unconscious, if you are a medic."]
+    ,[CBA_SETTINGS_CAT, _curCat]
+    ,true
+] call CBA_fnc_addSetting;
+
 if !(hasInterface) exitWith {
     ADDON = true;
 };
