@@ -152,9 +152,10 @@ if (isClass(configFile >> "CfgPatches" >> "ace_interact_menu")) then {
 [
     "diwako_dui_vitals_medicAlert"
     ,"CHECKBOX"
-    ,["Enabled", "Play a sound when a group member goes unconscious, if you are a medic."]
+    ,["Medic Alert", "Play a sound when a group member goes unconscious, if you are a medic."]
     ,[CBA_SETTINGS_CAT, _curCat]
     ,true
+    ,2
 ] call CBA_fnc_addSetting;
 
 _curCat = localize "STR_dui_cat_custom_color";
